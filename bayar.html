@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>💳 Pembayaran</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1> 💳 Pembayaran</h1>
+    <nav>
+      <a href="index.html">🏠 Dashboard</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Total Belanja: <span id="total-bayar">Rp 0</span></h2>
+    <label for="metode">Pilih Metode   Pembayaran:</label>
+    <select id="metode">
+      <option value="DANA">DANA</option>
+      <option value="OVO">OVO</option>
+      <option value="GOPAY">GoPay</option>
+      <option value="TRANSFER">Transfer Bank</option>
+    </select>
+    <button onclick="konfirmasiBayar()">Bayar Sekarang</button>
+    <p id="pesan"></p>
+  </main>
+
+  <script src="bayar.js"></script>
+</body>
+</html>
